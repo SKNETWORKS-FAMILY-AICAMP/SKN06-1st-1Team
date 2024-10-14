@@ -1,5 +1,6 @@
--- use ;
-
+use Project;
+drop table if exists fuel_efficiency;
+select * from fuel_efficiency;
 CREATE TABLE fuel_efficiency (
     `휘발유` FLOAT,
     `경유` FLOAT,

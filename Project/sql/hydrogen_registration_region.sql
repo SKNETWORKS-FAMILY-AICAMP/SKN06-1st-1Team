@@ -1,4 +1,4 @@
-use test;
+use Project;
 
 CREATE TABLE `hydrogen_registration_region` (
     `지역` VARCHAR(255),

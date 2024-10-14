@@ -1,11 +1,6 @@
-use car_fuel;
+use Project;
 SELECT * FROM car_fuel;
 
-
-
-DROP TABLE IF EXISTS car_fuel;
-create database car_fuel;
-use car_fuel;
 CREATE TABLE car_fuel (
     년도 INT PRIMARY KEY,          -- 연도
     전기 INT,               -- 전기

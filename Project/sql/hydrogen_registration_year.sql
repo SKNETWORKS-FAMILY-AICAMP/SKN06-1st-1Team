@@ -1,6 +1,8 @@
-use test;
+use Project;
 
-CREATE TABLE `hydrogen_registration_year` (
+drop table if exists hydrogen_registration_year;
+
+CREATE TABLE if not exists `hydrogen_registration_year` (
     `연도` VARCHAR(255),
     `등록 차량 수` FLOAT,
     `전년 대비 증가량` FLOAT

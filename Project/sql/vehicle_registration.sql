@@ -1,4 +1,11 @@
 use Project;
+select * from vehicle_registration;
+
+CREATE TABLE vehicle_registration (
+    증가량 VARCHAR(255),
+    계 VARCHAR(255),
+    년도 VARCHAR(255)
+);
 
 # Series
 INSERT INTO vehicle_registration (증가량, 계, 년도) VALUES (NULL, 17663188, 2018);
