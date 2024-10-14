@@ -3,7 +3,7 @@ import pandas as pd
 import os
 
 def csv_to_sql(csv_file_name, table_name):
-    # 프로젝트의 루트 디렉토리 경로 설정
+    
     root_path = os.path.dirname(os.path.abspath(__file__))
     
     # CSV 파일 경로 설정
