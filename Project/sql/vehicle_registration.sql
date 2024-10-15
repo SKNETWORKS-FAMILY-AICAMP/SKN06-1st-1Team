@@ -1,6 +1,6 @@
 use Project;
-select * from vehicle_registration;
 
+select * from vehicle_registration;
 CREATE TABLE vehicle_registration (
     증가량 VARCHAR(255),
     계 VARCHAR(255),
