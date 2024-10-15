@@ -5,9 +5,8 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
 
-st.title('연도별 수소자동차 등록 현황')
-st.write("SKN_1st_1Team")
-
+st.title('연도별 수소자동차 등록 현황💧')
+st.write("**연도별 수소차 등록량 및 증가량**")
 
 # MySQL 연결 설정
 connection = pymysql.connect(
@@ -52,7 +51,7 @@ try:
 
     # 그래프 레이아웃 설정
     fig.update_layout(
-        title='연도별 수소차 등록 현황',
+        title='연도별 수소차 등록 건수 증가 추이',
         xaxis_title='연도',
         yaxis_title='차량 수',
         barmode='group',  # 막대그래프와 꺾은선 그래프를 그룹으로 표시

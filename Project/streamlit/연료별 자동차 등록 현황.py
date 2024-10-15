@@ -4,8 +4,8 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-st.title('친환경 연료 사용 차량 연도별 등록 현황')
-st.write("SKN_1st_1Team")
+st.title('친환경 차량 연도별 등록 현황')
+st.write("등록 대수 표")
 
 
 # MySQL 연결 설정
@@ -32,11 +32,12 @@ try:
 
     #######################################################################
     # 선 그래프 출력
-    st.subheader("연도별 연료 사용 현황")
+    st.subheader("연도/연료 별 자동차 등록 대수 현황")
     st.line_chart(df)
 ################################################################
     ###########################################################
     #막대그래프 출력
+    st.subheader("연도/연료별 자동차 등록 대수 비율")
     st.bar_chart(df[['수소', '천연가스','하이브리드','전기','기타']])
     #st.line_chart(df[['수소', '']])
 

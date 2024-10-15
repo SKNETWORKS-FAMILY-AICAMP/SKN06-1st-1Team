@@ -3,8 +3,8 @@ import pymysql
 import streamlit as st
 import plotly.graph_objects as go
 
-st.title('전국 수소차 등록 현황 및 수소 충전소 설치 현황⚡')
-st.write("SKN_1st_1Team")
+st.title('전국 수소 충전소 현황⚡')
+st.write("전국 수소 충전소 설치 현황")
 
 # MySQL 연결 설정
 connection = pymysql.connect(

@@ -2,54 +2,29 @@ import streamlit as st
 from PIL import Image
 import pandas as pd
 import pymysql
+import matplotlib.pyplot as plt
+import matplotlib
 
-st.title('수소차가 인기없는 이유')
-st.write("**연료별 자동차 연비**")
 
-# MySQL 연결 설정
-connection = pymysql.connect(
-    host='localhost',
-    user='scott',
-    password='tiger',
-    database='Project'
-)
-
-sql_file_path = r"C:\Users\Playdata\Desktop\SKN06-1st-1Team-main\Project\sql\fuel_efficiency.sql"
-
-try:
-    # 테이블에서 데이터 읽기
-    query = "SELECT * FROM fuel_efficiency"
-    df = pd.read_sql(query, connection)
-    # Streamlit으로 데이터프레임 출력
-    st.dataframe(df)
-finally:
-    # 연결 종료
-    connection.close()
+matplotlib.rcParams['font.family'] = 'Malgun Gothic'  # Windows에서 한글 폰트 설정
+matplotlib.rcParams['axes.unicode_minus'] = False  # 마이너스 기호가 깨지지 않도록 설정
 
 # Set the file paths for the images
-image_path_front = r"C:\Users\Playdata\Desktop\SKN06-1st-1Team-main\Project\streamlit\image\nexo_front.jpg"
-image_path_back = r"C:\Users\Playdata\Desktop\SKN06-1st-1Team-main\Project\streamlit\image\nexo_back.jpg"
-image_path_bus = r"C:\Users\Playdata\Desktop\SKN06-1st-1Team-main\Project\streamlit\image\수소버스.jpg"
+image_path_future = r"C:\Users\Playdata\Desktop\SKN06-1st-1Team-main\Project\streamlit\image\수소자동차_미래 버전.jpg"
+image_path_hybrid1 = r"C:\Users\Playdata\Desktop\SKN06-1st-1Team-main\Project\streamlit\image\수소전기 하이브리드_현대 N 비전 74.png"
+image_path_hybrid2 = r"C:\Users\Playdata\Desktop\SKN06-1st-1Team-main\Project\streamlit\image\수소전기_하이브리드_N 비전 74.jpg"
 
-# Create a Streamlit application to display the image
-def main():
-    st.title("수소자동차")
-    st.write("국내 유일 상용수소차 - 현대자동차 NEXO")
-    
-    # Load the image using PIL and resize it
-    image_front = Image.open(image_path_front)
-    image_back = Image.open(image_path_back)
-    image_bus = Image.open(image_path_bus)
-    image_back = image_back.resize((810, 450))
-    image_bus = image_bus.resize((770, 474))
-    
-    # Display the image in Streamlit
-    col1, col2 = st.columns(2)
-    with col1:
-        st.image(image_front, caption='Nexo - Front View', use_column_width=True)
-    with col2:
-        st.image(image_back, caption='Nexo - Back View', use_column_width=True)
+st.title("미래의 수소차")
 
-    st.image(image_bus, caption='Hydrogen Bus', use_column_width=True)
+# Display future hydrogen car image
+st.subheader("현대 NEXO의 Ai 활용 디자인")
+image_future = Image.open(image_path_future)
+st.image(image_future, caption='미래 수소자동차', use_column_width=True)
 
-main()
+# Display hydrogen hybrid car images
+st.subheader("수소 + 전기 하이브리드 - 현대 N 비전 74(양산 예정)")
+image_hybrid1 = Image.open(image_path_hybrid1)
+st.image(image_hybrid1, caption='현대 N 비전 74', use_column_width=True)
+
+image_hybrid2 = Image.open(image_path_hybrid2)
+st.image(image_hybrid2, caption='현대 N 비전 74', use_column_width=True)
