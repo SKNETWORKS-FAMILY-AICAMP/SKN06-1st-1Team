@@ -53,10 +53,13 @@
 
 ## ✍️ **Type 1**
 
-> - **생성 과정** : csv 파일 형식으로 저장된 데이터를 SQL DATA Base에 저장.
->
-> - **구성 요소** (대표 예시 테이블)
->  | 컬럼 명 | 데이터 타입 | 비고 |
+- **생성 과정** : csv 파일 형식으로 저장된 데이터를 SQL DATA Base에 저장.
+
+<br>
+
+- **구성 요소** (대표 예시 테이블) <br>
+
+| 컬럼 명 | 데이터 타입 | 비고 | 
 | :-------: | :-------: | :-------: |
 | 년도 | VARCHAR | - | 
 | 전기 | INT | - | 
@@ -64,48 +67,54 @@
 | 하이브리드 | INT | - | 
 | 수소 | INT | - |
 | 기타 | INT | - | 
-| 합계 | INT | - | 
->
-> - **구현 형태** (대표 예시 테이블) <br>
-> <br>
-> <img width="800px" src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-1st-1Team/blob/main/Project/image/Type_1.png?raw=true" /> 
+| 합계 | INT | - |
+
+<br>
+
+ - **구현 형태** (대표 예시 테이블) <br>
+ <img width="800px" src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-1st-1Team/blob/main/Project/image/Type_1.png?raw=true" /> 
 
 <br>
 
 ## ✍️ **Type 2**
 
-> - **생성 과정** : 웹 페이지를 크롤링하여 csv 파일 형식으로 저장한 뒤, csv 파일 데이터를 SQL DATA Base에 저장.
->   → <span style="color: blue;">Selenium</span> 활용
->
-> - **구성 요소** (대표 예시 테이블)
->
-> | 컬럼 명 | 데이터 타입 | 비고 |
+- **생성 과정** : 웹 페이지를 크롤링하여 csv 파일 형식으로 저장한 뒤, csv 파일 데이터를 SQL DATA Base에 저장.
+                  → <span style="color: blue;">Selenium</span> 활용
+<br>
+
+- **구성 요소** (대표 예시 테이블) <br>
+
+| 컬럼 명 | 데이터 타입 | 비고 |
 | :-------: | :-------: | :-------: |
 | 년도 | VARCHAR | - |
 | 등록 차량 수 | FLOAT | - |
 | 전년 대비 증가량 | FLOAT | - |
->
-> - **구현 형태** (대표 예시 테이블) <br>
-> <br>
-> <img width="800px" src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-1st-1Team/blob/main/Project/image/Type_2.png?raw=true" /> 
+
+<br>
+
+- **구현 형태** (대표 예시 테이블) <br>
+<img width="800px" src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-1st-1Team/blob/main/Project/image/Type_2.png?raw=true" /> 
 
 <br>
 
 ## ✍️ **Type 3**
 
-> - **생성 과정** : 웹 페이지를 크롤링하여 csv 파일 형식으로 저장한 뒤, csv 파일 데이터를 SQL DATA Base에 저장.
->   → <span style="color: blue;">Open API</span> 활용
->
-> - **구성 요소** (대표 예시 테이블)
->
-> | 컬럼 명 | 데이터 타입 | 비고 |
+- **생성 과정** : 웹 페이지를 크롤링하여 csv 파일 형식으로 저장한 뒤, csv 파일 데이터를 SQL DATA Base에 저장.
+                  → <span style="color: blue;">Open API</span> 활용
+
+<br>
+
+- **구성 요소** (대표 예시 테이블) <br>
+
+| 컬럼 명 | 데이터 타입 | 비고 |
 | :-------: | :-------: | :-------: |
 | 연료 종류 | FLOAT | - |
 | 연료 별 주행연비 평균값 | FLOAT | - |
->
-> - **구현 형태** (대표 예시 테이블) <br>
-> <br>
-> <img width="800px" src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-1st-1Team/blob/main/Project/image/Type_3.png?raw=true" />
+
+<br>
+
+- **구현 형태** (대표 예시 테이블) <br>
+<img width="800px" src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN06-1st-1Team/blob/main/Project/image/Type_3.png?raw=true" />
 
 <br>
 
@@ -126,7 +135,7 @@
 # 🧠 한줄 회고
 <br>
 
-> - **노원재** : 
+> - **노원재** : 처음에는 어떻게 할지 정말 막막했지만, 프로젝트를 진행하며 코딩이 실제로 어떻게 활용되는지이해할 수 있었습니다.
 > - **박서윤** : 이제까지 배운 내용을 활용해서 결과물을 만들어낼 수 있어 뜻깊은 시간이었습니다. 부족한 부분을 팀원분들이 많이 도와주셔서 잘 마무리할 수 있어서 감사했습니다!
 > - **정지원** : 교육시간에 배운 내용들을 최대한 활용해보고자 했는데 잘 이루어진 것 같고, 팀워크가 좋은 팀원들을 만나서 첫 프로젝트를 무사히 마무리했습니다.
 > - **홍준**   : 코딩을 처음 체계적으로 배우기 시작한 지 2주 만에, 팀원들과 함께 노력하며 미니 프로젝트를 완성한 것은 협력과 성장이 무엇인지 깨닫게 해준 값진 시간이었습니다.
