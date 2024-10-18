@@ -78,7 +78,7 @@
 
 ## ✍️ **Type 2**
 
-- **생성 과정** : 웹 페이지를 크롤링하여 csv 파일 형식으로 저장한 뒤, csv 파일 데이터를 SQL DATA Base에 저장.
+- **생성 과정** : 웹 페이지를 크롤링하여 csv 파일 형식으로 저장한 뒤, csv 파일 데이터를 SQL DATA Base에 저장. <br>
                   → <span style="color: blue;">Selenium</span> 활용
 <br>
 
@@ -99,7 +99,7 @@
 
 ## ✍️ **Type 3**
 
-- **생성 과정** : 웹 페이지를 크롤링하여 csv 파일 형식으로 저장한 뒤, csv 파일 데이터를 SQL DATA Base에 저장.
+- **생성 과정** : 웹 페이지를 크롤링하여 csv 파일 형식으로 저장한 뒤, csv 파일 데이터를 SQL DATA Base에 저장. <br>
                   → <span style="color: blue;">Open API</span> 활용
 
 <br>
